@@ -218,11 +218,13 @@
     return Expanded(
       child: TextButton(
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(color),
+          backgroundColor: MaterialStatePropertyAll(color),
+          shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.zero)),
         ),
         onPressed: () {
-          playSound(soundNumber);
+          playNote(noteNumber);
         },
+        child: SizedBox(),
       ),
     );
   }
