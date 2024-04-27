@@ -210,6 +210,8 @@
 
 - **`FlatButton`** is **`deprecated`**, so use **`TextButton`** instead.
 
+- **`TextButton`** requires a child and defaults to rounded corners as of **April 2024**. Use **`shape`** to remove the rounded corners.
+
 - By the end, the implementation of your **`TextButton`** should look like this:
   
   ```dart
